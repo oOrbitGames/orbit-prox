@@ -7,15 +7,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" type="image/png" href="logo.png" />
-    <title>NGINX Proxy</title>
+    <title>Orbit Proxy</title>
+    <style>
+        body {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 25px;
+            text-align: center;
+            background: linear-gradient(180deg, #0d0f24, #1a1c3b);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 10%;
+        }
+
+        .container img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .container span {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff7bff;
+        }
+
+        .container input {
+            font-size: 18px;
+            width: 60%;
+            padding: 10px;
+            margin-top: 20px;
+            border: 2px solid #7044ff;
+            border-radius: 8px;
+            background-color: #1f2244;
+            color: #ffffff;
+        }
+
+        .container button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: 2px solid #7044ff;
+            border-radius: 8px;
+            background-color: #7044ff;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .container button:hover {
+            background-color: #4f31aa;
+        }
+
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #bbbbff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .container a:hover {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #bbbbff;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="logo-full.png" width="250" height="250">
+        <img src="logo-full.png" alt="Logo">
         <div>
             <script>
                 function go() {
@@ -27,18 +99,17 @@
                     }
                 }
             </script>
-            <span class="w3-xlarge">Input your URL here: </span>
+            <span>Welcome to Orbit Proxy</span>
             <div>
-                <input class="w3-xlarge" type='text' placeholder='https://www.google.com' id='url-target'
-                    onkeydown='if(event.key==="Enter") go()' />
-                <button onclick='go()' class="w3-xlarge">Go!</button>
+                <input type="text" placeholder="Search freely" id="url-target" onkeydown="if(event.key==='Enter') go()" />
+                <button onclick="go()">Search</button>
             </div>
-            <br>
-            <br>
-            </p>
-            <p class="w3-medium">View GitHub source <a class="w3-medium" href="https://github.com/binary-person/womginx" target="_blank">here</a></p>
+            <p><a href="https://github.com/binary-person/womginx" target="_blank">View GitHub source</a></p>
         </div>
     </div>
+    <footer>
+        <p>Find any website you want (GeForce Now, and ChatGPT don't work)</p>
+    </footer>
 </body>
 
 </html>
